@@ -1,0 +1,11 @@
+Password Strength Checker - Automated Test Cases
+
+Password: abc123
+Password Strength: Weak (Score: 1/4)
+
+Password: Geeta123
+Password Strength: Medium (Score: 3/4)
+
+Password: Geeta@123
+Password Strength: Strong (Score: 4/4)
+
