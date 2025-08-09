@@ -1,4 +1,5 @@
 import re
+import getpass
 
 def check_password_strength(password):
     score = 0
@@ -29,11 +30,7 @@ def check_password_strength(password):
 
 
 if __name__ == "__main__":
-    print("Password Strength Checker - Automated Test Cases\n")
-
-    test_passwords = ["abc123", "Geeta123", "Geeta@123"]
-
-    for pwd in test_passwords:
-        strength, score = check_password_strength(pwd)
-        print(f"Password: {pwd}")
-        print(f"Password Strength: {strength} (Score: {score}/4)\n")
+    print("Password Strength Checker")
+    pwd = getpass.getpass("Enter your password (input hidden): ")
+    strength, score = check_password_strength(pwd)
+    print(f"Password Strength: {strength} (Score: {score}/4)")
